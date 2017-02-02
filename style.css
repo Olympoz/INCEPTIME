@@ -1,0 +1,222 @@
+header {
+	width: 100%;
+	background: #191919;
+	height: 70px;
+	line-height: 60px;
+	color: white;
+	font-weight: 900;
+	margin-bottom: auto;
+}
+
+.hamburger {
+	background: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 45px;
+	padding: 5px 15px 0px 15px;
+	color: #fff;
+	border: 0;
+	font-size: 1.4em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 10000000000000;
+}
+
+.cross {
+	background: none;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	padding: 13px 15px 0px 15px;
+	color: #fff;
+	border: 0;
+	font-size: 3em;
+	line-height: 65px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 10000000000000;
+}
+
+.body {
+	background-color: #191919;
+	color: #66B266;
+}
+
+.menu {
+	z-index: 1000000;
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 99%;
+	background: #191919;
+	position: absolute;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.menu li {
+	display: block;
+	padding: 15px 0 15px 0;
+	border-bottom: #191919 1px solid;
+}
+
+.menu li:hover {
+	display: block;
+	background: #66B266;
+	padding: 15px 0 15px 0;
+	border-bottom: #1d1f20 1px solid;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	margin: 0px;
+	color: #fff;
+}
+
+.menu ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.glyphicon-home {
+	color: white;
+	font-size: 1.5em;
+	margin-top: 5px;
+	margin: 0 auto;
+}
+
+.title {
+	text-align: center;
+	left: 0;
+	line-height: 200px;
+	margin: auto;
+	margin-top: -100px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	font-size: 150px;
+	font-family: Impact, sans-serif;
+}
+
+.title:active {
+	font-size: 180px;
+	transition-duration: 2s;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #fff;
+	color: #191919;
+}
+
+.loader {
+	position: fixed;
+	z-index: 9999;
+	background: url('hourglass.gif') 50% 50% no-repeat;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	cursor: wait;
+	background-color: #191919;
+}
+
+/*catégorie */
+.mySlides {
+	display: none;
+	width: 100%;
+}
+
+.demo {
+	cursor: pointer;
+}
+
+.titre {
+	position: top;
+	text-align: center;
+	font-family: Impact, sans-serif;
+	font-size: 30px;
+	margin-top: -70px;
+}
+
+/*catégorie */
+
+/*clothes*/
+
+/*Jean*/
+
+.containerjean {
+	position: relative;
+	width: 50%;
+}
+
+.imagejean {
+	display: block;
+	width: 50%;
+	height: 50%;
+}
+
+.overlayjean {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 25%;
+	width: 25%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #66B266;
+}
+
+.containerjean:hover .overlayjean{
+	opacity: 1;
+}
+
+.textjean {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+/*Jean */
+
+
+
+/*clothes*/
+
+
+
+/*footer*/
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	background-color: #66B266;
+	text-align: center;
+	color: #191919;
+	font-family: Impact, sans-serif;
+	font-size: 20px;
+}
