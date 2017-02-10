@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
-<title>INCEPTIME - Catégories</title>
+<title>Catégories</title>
+<link rel="shortcut icon" href="views/pictures/sablier.ico">
 </head>
 <body class="body">
 
@@ -22,7 +23,8 @@
 			<a href="homepage.php"><li>Accueil</li></a>
 			<a href="categories.php"><li>Catégories</li></a>
 			<a href="panier.php"><li>Votre panier</li></a>
-			<a href="aboutus.php"><li>About us</li></a>
+			<a href="connexion.php"><li>Connexion</li></a>
+			<a href="signin.php"><li>Enregistrement</li></a>
 
 
 		</ul>
@@ -32,40 +34,41 @@
 		<p>Catégories</p>
 	</div>
 
+	<div class="loader"></div>
+	
+
 	<div class="w3-content" style="max-width: 1000px">
-		<a href="meubles.php"> <img class="mySlides" src="table.jpg" href>
-		</a> <a href=clothes.php> <img class="mySlides" src="clothes.jpg">
-		</a> <a href="foods.php"> <img class="mySlides" src="miel.jpg">
+		<a href="meubles.php"> <img class="mySlides" src="views/pictures/table.jpg" href>
+		</a> <a href=clothes.php> <img class="mySlides" src="views/pictures/clothes.jpg">
+		</a> <a href="foods.php"> <img class="mySlides" src="views/pictures/miel.jpg">
 		</a>
 		<div class="w3-row-padding w3-section">
 			<div class="w3-col s4">
 
-				<img class="demo w3-opacity w3-hover-opacity-off" src="table.jpg"
+				<img class="demo w3-opacity w3-hover-opacity-off" src="views/pictures/table.jpg"
 					style="width: 100%" alt="meubles" onclick="currentDiv(1)">
 
 			</div>
 			<div class="w3-col s4">
 
-				<img class="demo w3-opacity w3-hover-opacity-off" src="clothes.jpg"
+				<img class="demo w3-opacity w3-hover-opacity-off" src="views/pictures/clothes.jpg"
 					style="width: 100%" onclick="currentDiv(2)">
 			</div>
 			<div class="w3-col s4">
 
-				<img class="demo w3-opacity w3-hover-opacity-off" src="miel.jpg"
+				<img class="demo w3-opacity w3-hover-opacity-off" src="views/pictures/miel.jpg"
 					style="width: 100%" onclick="currentDiv(3)">
 
 			</div>
 		</div>
 	</div>
 
-	<footer class="footer"></footer>
+	<footer class="footer">Vous devez choisir entre la boutique de MEUBLES, de VÊTEMENTS ou de NOURRITURES </footer>
 
 </body>
-</html>
-
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -95,4 +98,15 @@ function showDivs(n) {
 }
 </script>
 
+<script type="text/javascript"
+		src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+		$(".loader").fadeOut("1000");
+		})
+</script>
+
+
+
+</html>
 

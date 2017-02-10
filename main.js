@@ -13,3 +13,7 @@ $(".cross").click(function() {
 		$(".hamburger").show();
 	});
 });
+
+$(window).load(function() {
+		$(".loader").fadeOut("1000");
+		})

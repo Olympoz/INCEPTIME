@@ -6,6 +6,7 @@ header {
 	color: white;
 	font-weight: 900;
 	margin-bottom: auto;
+
 }
 
 .hamburger {
@@ -138,7 +139,8 @@ header {
 	background-color: #191919;
 }
 
-/*catégorie */
+/*Catégories */
+
 .mySlides {
 	display: none;
 	width: 100%;
@@ -156,60 +158,79 @@ header {
 	margin-top: -70px;
 }
 
-/*catégorie */
+/*Catégories */
 
-/*clothes*/
+/*Articles*/
 
-/*Jean*/
+div.all{
 
-.containerjean {
-	position: relative;
-	width: 50%;
+	position: center;	
+	margin-bottom:auto; 
+	margin-top:auto;
+	margin-left:auto;
+	margin-right:auto;
 }
 
-.imagejean {
-	display: block;
-	width: 50%;
-	height: 50%;
+div.img {
+    margin: 5px;
+    border: 1px solid #191919;
+    float: left;
+    width: 180px;
 }
 
-.overlayjean {
+div.img:hover {
+    border: 1px solid #191919;
+
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+     
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.overlay {
 	position: absolute;
-	top: 0;
+	top: -60;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 25%;
-	width: 25%;
+	height: 48%;
+	width: 100%;
 	opacity: 0;
-	transition: .5s ease;
+	transition: .5s ease-out;
 	background-color: #66B266;
 }
 
-.containerjean:hover .overlayjean{
+.container {
+	position: relative;
+	
+}
+
+.container:hover .overlay{
 	opacity: 1;
 }
 
-.textjean {
+.price {
 	color: white;
-	font-size: 20px;
+	font-size: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 }
-/*Jean */
 
+/*Articles*/
 
-
-/*clothes*/
-
-
-
-/*footer*/
+/*Footer*/
 .footer {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -219,4 +240,7 @@ header {
 	color: #191919;
 	font-family: Impact, sans-serif;
 	font-size: 20px;
+	
 }
+
+/*Footer*/
